@@ -1,0 +1,4 @@
+venv
+config.py
+*.pyc
+*.csv
