@@ -1,12 +1,12 @@
 # Bricklink Pro
 
-After spending ocuntless hours manageing an enormous spreadsheet and trying to figure out how to get all fo the pieces for my bricklinked UCS Millneium Falcon, I decided that it would be way simple to simply run a script to see how much a bricklinked set would cost. That's when I decided to create Bricklink Pro.
+After spending countless hours managing an enormous spreadsheet and trying to figure out how to get all of the pieces for my bricklinked UCS Millneium Falcon, I decided that it would be way simpler to run a script to see how much a bricklinked set would cost. That's when I decided to create Bricklink Pro.
 
-Bricklink Pro conttians 2 scripts that automate the process of creating set lists and figureing out where to get all the pieces from.
+Bricklink Pro contians 2 scripts that automate the process of creating set lists and figuring out where to get all the pieces from.
 
 ### Setlist.py
 
-The first is `setlist.py`. It takes in a set number and will create a csv with the parts and qunatities required for building that set.
+The first is `setlist.py`. It takes in a set number and will create a csv with the parts and quantities required for building that set.
 
 Example usage:
 
@@ -48,5 +48,5 @@ part_id,element_id,qty,price,name,link
 ...
 ```
 
-Note: This script using web scraping and requests (one for each piece) so it can take a few minutes for sets with a lot of pieces.
+Note: This script uses web scraping and requests (one for each piece) so it can take a few minutes for sets with a lot of pieces.
 

@@ -64,9 +64,7 @@ def optimize_bricklink(lego_set):
 def output_purchase_to_csv(lego_set, purchase, set_id):
     with open(lego_set.bricklink_file, 'w+') as f:
         f.write('part_id,element_id,qty,price,name,link\n')
-        def part_id(p):
-            return p.part_id
-        for p in sorted(purchase, key=part_id):
+        for p in purchase:
             f.write(str(p))
 
 
