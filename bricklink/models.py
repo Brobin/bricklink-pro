@@ -16,13 +16,19 @@ class Set(object):
     def __init__(self, set_id, description, parts):
         self.set_id = set_id
         self.description = description
-        self.parts = parts
+        self._parts = parts
 
     def __str__(self):
         output = 'part_id,element_id, qty\n'
         for part in self.parts:
             output += str(part)
         return output
+
+    @property
+    def parts(self):
+        def part_id(p):
+            return p.part_id
+        return sorted(self._parts, key=part_id)
 
     @property
     def parts_file(self):
